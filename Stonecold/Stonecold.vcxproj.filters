@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="application.cpp">
+    <ClCompile Include="src\StonecoldApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
