@@ -11,5 +11,8 @@ namespace Wal{
 		virtual ~Application();
 		void Run();
 	};
+
+	// has to be defined in Stonecold
+	Application* CreateApplication();
 }
 

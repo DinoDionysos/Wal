@@ -16,10 +16,7 @@ public:
 	}
 };
 
-int main()
+Wal::Application* Wal::CreateApplication()
 {
-	// testing the entry point Run()
-	Stonecold* stonecold = new Stonecold();
-	stonecold->Run();
-	delete stonecold;
+	return new Stonecold;
 }
