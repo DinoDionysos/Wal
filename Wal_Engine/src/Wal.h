@@ -2,6 +2,7 @@
 
 #include "Wal/Application.h"
 #include "Wal/Core.h"
+#include "Wal/Log.h"
 
 
 // Entry point
