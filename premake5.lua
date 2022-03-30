@@ -1,6 +1,6 @@
 workspace "Wal_Engine" -- Name of the solution
 	architecture "x64"
-	startup "Stonecold"
+	startproject "Stonecold"<-
 
 	configurations
 	{
