@@ -13,6 +13,13 @@ workspace "Wal_Engine" -- Name of the solution
 -- architecture= x64, ...
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Wal_Engine/vendor/GLFW/include"
+
+-- "include" the premake5.lua from GLFW
+include "Wal_Engine/vendor/GLFW"
+
 project "Wal_Engine" -- Name of the Project
 	location "Wal_Engine" -- Name of the folder where the project is relative to premake5.lua
 	kind "SharedLib"
@@ -34,7 +41,14 @@ project "Wal_Engine" -- Name of the Project
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
