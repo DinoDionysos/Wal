@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Wal">
       <UniqueIdentifier>{E931880B-553B-887C-DEB6-9E7C4ABF937C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Wal\Events">
       <UniqueIdentifier>{AD7DA72F-9935-E97C-023D-C2D8EE13846D}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform">
-      <UniqueIdentifier>{b7207d42-8742-499f-be2c-31d5e51cbcd2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\Windows">
-      <UniqueIdentifier>{ba2b7969-9a79-480f-a30c-30bb79b37475}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Wal.h" />
     <ClInclude Include="src\Wal\Application.h">
       <Filter>Wal</Filter>
@@ -40,15 +43,15 @@
     <ClInclude Include="src\Wal\Log.h">
       <Filter>Wal</Filter>
     </ClInclude>
-    <ClInclude Include="src\wlpch.h" />
-    <ClInclude Include="src\Wal\Platform\Windows\WindowsWindow.h">
-      <Filter>Platform\Windows</Filter>
-    </ClInclude>
     <ClInclude Include="src\Wal\Window.h">
       <Filter>Wal</Filter>
     </ClInclude>
+    <ClInclude Include="src\wlpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Wal\Application.cpp">
       <Filter>Wal</Filter>
     </ClCompile>
@@ -56,8 +59,5 @@
       <Filter>Wal</Filter>
     </ClCompile>
     <ClCompile Include="src\wlpch.cpp" />
-    <ClCompile Include="src\Wal\Platform\Windows\WindowsWindow.cpp">
-      <Filter>Platform\Windows</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
