@@ -1,3 +1,4 @@
+#include "wlpch.h"
 #include "Application.h"
 
 #include "Wal/Events/ApplicationEvent.h"

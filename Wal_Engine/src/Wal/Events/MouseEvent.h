@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Wal {
 
 	class WAL_API MouseMovedEvent : public Event
