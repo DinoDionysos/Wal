@@ -1,3 +1,6 @@
 [submodule "Wal_Engine/vendor/spdlog"]
 	path = Wal_Engine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Wal_Engine/vendor/GLFW"]
+	path = Wal_Engine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
