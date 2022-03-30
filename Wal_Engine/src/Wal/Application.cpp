@@ -4,10 +4,13 @@
 #include "Wal/Events/ApplicationEvent.h"
 #include "Wal/Log.h"
 
+
+#include <GLFW/glfw3.h>
+
 namespace Wal {
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -18,16 +21,11 @@ namespace Wal {
 	// dummy function
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			WL_CLIENT_TRACE(e);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			WL_CLIENT_TRACE(e);
-		}
-
-		while (true);
 	}
 }
