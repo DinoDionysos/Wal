@@ -1,5 +1,6 @@
 workspace "Wal_Engine" -- Name of the solution
 	architecture "x64"
+	startup "Stonecold"
 
 	configurations
 	{
@@ -64,6 +65,7 @@ project "Wal_Engine" -- Name of the Project
 
 		postbuildcommands
 		{
+			("{MKDIR} ../bin/" .. outputdir .. "/Sandbox"),
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Stonecold")
 		}
 
