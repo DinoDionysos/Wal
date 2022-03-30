@@ -1,7 +1,8 @@
 # dirs
 .vs/
 bin-int/
-bin/
+bin/*
+!bin/premake
 
 # files
 *.user
