@@ -14,6 +14,6 @@
 
 #include "Wal/Log.h"
 
-#ifdef HZ_PLATFORM_WINDOWS
-#include <Windows.h>
+#ifdef WL_PLATFORM_WINDOWS
+	#include <Windows.h>
 #endif
