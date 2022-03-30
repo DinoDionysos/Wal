@@ -22,6 +22,9 @@ project "Wal_Engine" -- Name of the Project
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "wlpch.h"
+	pchsource "Wal_Engine/src/wlpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
