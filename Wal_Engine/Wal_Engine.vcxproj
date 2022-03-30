@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WL_PLATFORM_WINDOWS;WL_BUILD_DLL;WL_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -148,6 +148,10 @@
     <ClInclude Include="src\Wal\Application.h" />
     <ClInclude Include="src\Wal\Core.h" />
     <ClInclude Include="src\Wal\EntryPoint.h" />
+    <ClInclude Include="src\Wal\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Wal\Events\Event.h" />
+    <ClInclude Include="src\Wal\Events\KeyEvent.h" />
+    <ClInclude Include="src\Wal\Events\MouseEvent.h" />
     <ClInclude Include="src\Wal\Log.h" />
   </ItemGroup>
   <ItemGroup>

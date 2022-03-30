@@ -4,6 +4,9 @@
     <Filter Include="Wal">
       <UniqueIdentifier>{E931880B-553B-887C-DEB6-9E7C4ABF937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Wal\Events">
+      <UniqueIdentifier>{c9911b04-5b2e-4adf-8d91-3891536438be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Test.h" />
@@ -19,6 +22,18 @@
     </ClInclude>
     <ClInclude Include="src\Wal\Log.h">
       <Filter>Wal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Wal\Events\MouseEvent.h">
+      <Filter>Wal\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Wal\Events\KeyEvent.h">
+      <Filter>Wal\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Wal\Events\Event.h">
+      <Filter>Wal\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Wal\Events\ApplicationEvent.h">
+      <Filter>Wal\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
